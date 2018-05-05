@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1 #{title}
+
+  form(method='POST' action='/signup')
+    div
+      label(for='email') Email:
+      input#email(type='email' name='email')
+    div
+      label(for='password') Password:
+      input#password(type='password' name='password')
+      button(type='submit') Sign up
