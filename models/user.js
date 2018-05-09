@@ -1,5 +1,7 @@
 var mongoose = require('mongoose');
 var bcrypt = require('bcrypt');
+var jwt = require('jsonwebtoken');
+
 var UserSchema = new mongoose.Schema({
   email: {
     type: String,
@@ -25,13 +27,23 @@ UserSchema.statics.authenticate = function(email, password, callback) {
       }
       bcrypt.compare(password, user.password, function(error, result) {
          if (result === true) {
-          return callback(null, user);
+          var token = jwt.sign(
+            {
+            email: user.email,
+            userId: user._id
+            },
+            process.env.JWT_KEY,
+            {
+              expiresIn: "1hr"
+            }
+          );
+          return callback(null, user, token);
          } else {
           return callback();
          }
       });
     });
-}
+};
 
 UserSchema.pre('save', function(next) {
   var user = this;
