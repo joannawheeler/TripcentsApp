@@ -32,7 +32,7 @@ Test Authentication Using Postman:
     password: "password"
   }
   
-  You should see a response like this:
+  You should see a response like this:z
   {
     "email": "myemail@myemail.com",
     "password": "password",
@@ -60,6 +60,9 @@ Test Authentication Using Postman:
   }
   
   Try changing the token back to the value used before. You should be authorized to view the page again because the token is valid. Once again, you should see this:
+  
   {
     "hi": "you are authorized to see this page"
   }
+
+  
