@@ -38,15 +38,15 @@ Make a POST request to localhost:3000/signin sending your credentials.
   You should see a response like this that shows the password has been hashed and a JWT token has been generated:
   
     {
-        "email": "myemail@myemail.com",
-        "password": "password",
-        "user": {
-        "_id": "5af25160ea07a4a8d6fee71b",
-        "email": "joanna@joanna.com",
-        "password": "$2b$10$jxfub1PjDnyMYkjdwWH16esudy2/5syCooK5mjcdH5BolIuQVMIAK",
-        "__v": 0
+      "email": "myemail@myemail.com",
+      "password": "password",
+      "user": {
+      "_id": "5af25160ea07a4a8d6fee71b",
+      "email": "joanna@joanna.com",
+      "password": "$2b$10$jxfub1PjDnyMYkjdwWH16esudy2/5syCooK5mjcdH5BolIuQVMIAK",
+      "__v": 0
     },
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvYW5uYUBqb2FubmEuY29tIiwidXNlcklkIjoiNWFmMjUxNjBlYTA3YTRhOGQ2ZmVlNzFiIiwiaWF0IjoxNTI1ODMwMDM0LCJleHAiOjE1MjU4MzM2MzR9.rgfOlgIODoP9QGf6G0atyQIQvMnzcTRxWusVPwCUskc"
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvYW5uYUBqb2FubmEuY29tIiwidXNlcklkIjoiNWFmMjUxNjBlYTA3YTRhOGQ2ZmVlNzFiIiwiaWF0IjoxNTI1ODMwMDM0LCJleHAiOjE1MjU4MzM2MzR9.rgfOlgIODoP9QGf6G0atyQIQvMnzcTRxWusVPwCUskc"
     }
   
   Copy the token.
