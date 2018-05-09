@@ -13,7 +13,8 @@ How to Run TripcentsApp:
 
 
 Test Authentication Using Postman:
-1) Make a POST request to localhost:3000/signup sending a JSON object with an email and password field. ex: 
+Make a POST request to localhost:3000/signup sending a JSON object with an email and password field. 
+  ex: 
   
     {
       "email": "myemail@email.com",
@@ -26,7 +27,8 @@ Test Authentication Using Postman:
       "message": "user created"
     }
 
-2) Make a POST request to localhost:3000/signin sending your credentials. ex:
+Make a POST request to localhost:3000/signin sending your credentials. 
+  ex:
   
     {
       "email": "myemail@email.com",
